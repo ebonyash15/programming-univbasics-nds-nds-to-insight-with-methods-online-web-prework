@@ -17,9 +17,7 @@ def directors_totals(nds)
 end
 
 def gross_for_director(director_data)
-#  first_director_hash = Spielberg total = currently "nil"
-#  p directors_totals(directors_database)["Stephen Spielberg"]
+  first_director_name = directors_database.first.values.first
+  first_director_hash = directors_database.find{ |x| x[:name] == first_director_name }#  p directors_totals(directors_database)["Stephen Spielberg"]
 p directors_totals(directors_database)[first_director_name]
-#first_director_name = directors_database.first.values.first
-#first_director_hash = directors_database.find{ |x| x[:name] == first_director_name }
 end

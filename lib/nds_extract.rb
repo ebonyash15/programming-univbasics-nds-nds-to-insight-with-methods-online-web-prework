@@ -15,7 +15,11 @@ def directors_totals(nds)
   end
   p result
 end
-# Find a way to accumulate the :worldwide_grosses and return that Integer
-# using director_data as input
+
 def gross_for_director(director_data)
+#  first_director_hash = Spielberg total = currently "nil"   
+
+ first_director_name = directors_database.first.values.first
+ p first_director_name
+#  first_director_hash = directors_database.find{ |x| x[:name] == first_director_name }
 end

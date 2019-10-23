@@ -17,7 +17,7 @@ def directors_totals(nds)
 end
 
 def gross_for_director(director_data)
-#  first_director_hash = Spielberg total = currently "nil"   
+#  first_director_hash = Spielberg total = currently "nil"
 
  first_director_name = directors_database.first.values.first
  p first_director_name
